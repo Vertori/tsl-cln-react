@@ -26,6 +26,18 @@ const Header = () => {
         <CloseWrapper>
           <CloseButton onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
+        <ShowOnSm>
+        <a href="#"> Model S</a>
+        </ShowOnSm>
+        <ShowOnSm>
+        <a href="#"> Model 3</a>
+        </ShowOnSm>
+        <ShowOnSm>
+        <a href="#"> Model X</a>
+        </ShowOnSm>
+        <ShowOnSm>
+        <a href="#"> Model Y</a>
+        </ShowOnSm>
         <li>
           <a href="#">Existing Inventory</a>
         </li>
@@ -68,6 +80,12 @@ const Header = () => {
         <li>
           <a href="#">Investor Relations</a>
         </li>
+        <ShowOnSm>
+        <a href="#">Shop</a>
+        </ShowOnSm>
+        <ShowOnSm>
+        <a href="#">Tesla Account</a>
+        </ShowOnSm>
       </BurgerNav>
     </Container>
   );
@@ -81,7 +99,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px 40px;
   top: 0;
   left: 0;
   right: 0;
@@ -109,11 +127,18 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
+
   a {
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 10px;
+
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
+  
 `;
 
 const CustomMenu = styled(MenuIcon)`
@@ -135,6 +160,7 @@ const BurgerNav = styled.div`
   text-align: start;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.25s ease-in-out;
+  overflow-y: auto;
 
   li {
     padding: 15px 0;
@@ -154,3 +180,9 @@ const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
+
+const ShowOnSm = styled.li`
+@media (min-width: 768px) {
+  display: none;
+}
+`
