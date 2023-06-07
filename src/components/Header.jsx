@@ -27,16 +27,16 @@ const Header = () => {
           <CloseButton onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
         <ShowOnSm>
-        <a href="#"> Model S</a>
+          <a href="#"> Model S</a>
         </ShowOnSm>
         <ShowOnSm>
-        <a href="#"> Model 3</a>
+          <a href="#"> Model 3</a>
         </ShowOnSm>
         <ShowOnSm>
-        <a href="#"> Model X</a>
+          <a href="#"> Model X</a>
         </ShowOnSm>
         <ShowOnSm>
-        <a href="#"> Model Y</a>
+          <a href="#"> Model Y</a>
         </ShowOnSm>
         <li>
           <a href="#">Existing Inventory</a>
@@ -81,10 +81,10 @@ const Header = () => {
           <a href="#">Investor Relations</a>
         </li>
         <ShowOnSm>
-        <a href="#">Shop</a>
+          <a href="#">Shop</a>
         </ShowOnSm>
         <ShowOnSm>
-        <a href="#">Tesla Account</a>
+          <a href="#">Tesla Account</a>
         </ShowOnSm>
       </BurgerNav>
     </Container>
@@ -117,6 +117,11 @@ const Menu = styled.div`
     text-transform: uppercase;
     padding: 10px;
     flex-wrap: nowrap;
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -131,14 +136,18 @@ const RightMenu = styled.div`
   a {
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: 5px;
+    padding: 10px;
 
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
 
     @media (max-width: 768px) {
       display: none;
     }
   }
-  
 `;
 
 const CustomMenu = styled(MenuIcon)`
@@ -182,7 +191,7 @@ const CloseWrapper = styled.div`
 `;
 
 const ShowOnSm = styled.li`
-@media (min-width: 768px) {
-  display: none;
-}
-`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
