@@ -31,14 +31,17 @@
  <br />
 
 ## About Project
+
 Basic clone of Tesla website built using React JS and designed using Styled Components. Website is fully responsive and uses reusable components that take certain props.
 
 ## Screenshots
+
 <img src="public/assets/screenshots/teslaScreen1.png"/>
 <img src="public/assets/screenshots/teslaScreen2.png"/>
-<img src="public/assets/screenshots/teslaScreen3.png"/> &nbsp;  <img src="public/assets/screenshots/teslaScreen4.png"/>
+<img src="public/assets/screenshots/teslaMobile1.png"/> &nbsp;  <img src="public/assets/screenshots/teslaMobile2.png"/>
 
 ## Tech Stack
+
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 - ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -48,6 +51,7 @@ Basic clone of Tesla website built using React JS and designed using Styled Comp
 ## Installation
 
 To get started with this project, simply clone the repository:
+
 ```bash
 git clone https://github.com/Vertori/tsl-cln-react.git
 ```
