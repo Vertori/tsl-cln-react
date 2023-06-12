@@ -7,7 +7,7 @@
   <h1 align="center">Tesla Clone Website</h1>
 
   <p align="center">
-    <a href=""><strong>Live Website »</strong></a>
+    <a href="https://tesla-clone-react-rf.netlify.app/"><strong>Live Website »</strong></a>
     <br/>
     <br/>
   </p>
@@ -32,7 +32,7 @@
 
 ## About Project
 
-Basic clone of Tesla website built using React JS and designed using Styled Components. Website is fully responsive and uses reusable components that take certain props.
+Basic clone of Tesla website built using React JS and designed using Styled Components. Website is fully responsive and uses reusable components that take certain props. Each section is animated using React Awesome Reveal.
 
 ## Screenshots
 
